@@ -1,0 +1,79 @@
+body {
+    padding: 10px;
+    margin: 10px;
+    border: 10px;
+}
+
+.category {
+    display: flex;
+   justify-content: space-around;
+}
+   
+.category ul{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    list-style: none;
+    font-style: none;
+}
+.more { 
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border-style: none;
+    transition-duration: 0.5s;
+}
+.more:hover {
+background-color: lightslategray;
+}
+.banner1 {
+    background-color: lightgreen;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 12px;
+    width: 420px;
+    height: 280px;
+   
+}
+.banner1 h1{
+    font-size: 12px;
+}
+.banner1 h2{
+    font-size: 22px;
+}
+.banner2 {
+    background-color: lightgreen;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 12px;
+    width: 420px;
+    height: 280px;
+  
+}.banner2 h1{
+    font-size: 12px;
+}
+.banner2 h2{
+    font-size: 22px;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+.banner-button{
+    background-color: lightgreen;
+    border-radius: 10px;
+    border: 1px solid green;
+    transition-duration: 0.5s;
+   }
+.banner-button:hover {
+       background-color: green;
+       color: lightgreen;
+   }
