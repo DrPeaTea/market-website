@@ -1,38 +1,65 @@
-body {
-    padding: 10px;
-    margin: 10px;
-    border: 10px;
-}
-
-.category {
+.header {
+    background-color: white;
     display: flex;
-   justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    padding: 0px 80px;
+    width: 1260px;
+    height: 130px;
 }
-   
+.links-bar {
+    background-color: #F9F9F9;
+    width: 1260px;
+    height: 45px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 45px;
+    gap: 39px;
+}
+.category {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 45px;
+    width: 1260px;
+    height: 280px;
+}
+.category h1{
+    font-size: 27px;
+}   
 .category ul{
     padding: 0%;
     margin: 0%;
     border: 0%;
     list-style: none;
     font-style: none;
-}
+    font-size: 19px ;
+    }
 .more { 
+    width: 234px;
+    height: 48px;
     background-color: #F5F5F5;
     border-radius: 10px;
     border-style: none;
     transition-duration: 0.5s;
 }
+.category .more{
+    position: absolute;
+    bottom: 59px;
+}
 .more:hover {
 background-color: lightslategray;
 }
 .banner1 {
-    background-color: lightgreen;
+    position: relative;
+    background-color:#F4F8EC;
     border-radius: 12px;
     padding: 12px;
-    font-size: 12px;
     width: 420px;
     height: 280px;
-   
+    padding-left: 33px;
 }
 .banner1 h1{
     font-size: 12px;
@@ -41,14 +68,15 @@ background-color: lightslategray;
     font-size: 22px;
 }
 .banner2 {
-    background-color: lightgreen;
+    position: relative;
+    background-color:#F4F8EC;
     border-radius: 12px;
     padding: 12px;
-    font-size: 12px;
     width: 420px;
     height: 280px;
-  
-}.banner2 h1{
+    padding-left: 33px;
+}
+.banner2 h1{
     font-size: 12px;
 }
 .banner2 h2{
@@ -67,9 +95,20 @@ a:hover{
 a:active{
     text-decoration: none;
 }
+.banner1 .banner-button {
+    position: absolute;
+    bottom: 25px;
+}
+.banner2 .banner-button {
+    position: absolute; 
+    bottom: 25px;
+}
 .banner-button{
     background-color: lightgreen;
-    border-radius: 10px;
+    border-radius: 12px;
+    width: 180px;
+    height: 44px;
+    font-size: 15px;
     border: 1px solid green;
     transition-duration: 0.5s;
    }
@@ -77,3 +116,73 @@ a:active{
        background-color: green;
        color: lightgreen;
    }
+   .best-seller{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 64px 45px;
+    width: 1260px;
+    height: 345px;
+}
+.best-seller h1{
+    font-size: 27px;
+}   
+.best-seller ul{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    list-style: none;
+    font-style: none;
+    font-size: 19px ;
+    }
+.more-products { 
+    width: 234px;
+    height: 48px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border-style: none;
+    transition-duration: 0.5s;
+}
+.best-seller .more-products{
+    position: absolute;
+    bottom: 59px;
+}
+.more-products:hover {
+background-color: lightslategray;
+}
+.product-example {
+    position: relative;
+    padding: 16px;
+    width: 238px;
+    height: 332px;
+    border: solid 1px;
+    border-radius: 12px;
+}
+.product-example h1 {
+    font-size: 23px;
+}
+.product-example p { 
+    font-size: 12px;
+}
+.product-example h2 { 
+    font-size: 18px;
+}
+.product-example h3 { 
+    font-size: 12px;
+}
+.buy-now {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 90px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: 1px solid green;
+    background-color: lightgreen;
+    transition-duration: 0.5s;
+}
+.buy-now:hover {
+       background-color: green;
+       color: lightgreen; 
+    }
