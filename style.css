@@ -210,69 +210,119 @@ img {
     border: 1px solid green;
     width: 90px;
     height: 36px;
-    transition-duration: 0.5s;
 }
-.buybutton:hover {
-       background-color: darkgreen;
-       color: white;
+.buy-now:hover {
+       background-color: green;
+       color: lightgreen; 
     }
-    .carousel {
-        width: 1260px;
-        height: 198px;
-        position: relative;
-        margin: 0 auto;
+.reviews {
+    display:grid;
+    grid-template-columns:630px 630px;
+    grid-template-rows: 134px 291px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+    font-size: 27px;
+    font-weight: 600;
+}
+.more-review-button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 64px;
+}
+.carousel{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container {
+        display: flex;
+        gap: 32px;
+        max-width:1260px;
         overflow: hidden;
-        text-align: center;
-      }
-      
-      .carousel > ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      .slide {
-        position: absolute;
-        width: 1260px;
+    }
+.slide {
         height: 198px;
-        opacity: 0%;
-        transition: 200ms opacity ease-in-out;
-        transition-delay: 200ms;
-        text-align: center;
-      }
-      .slide[data-active] {
-        opacity: 1;
-        z-index: 1;
-        transition-delay: 0ms;
-      }
-      .carousel-button {
-        position: absolute;
-        z-index: 2;
-        background: none;
-        border: none;
-        font-size: 4rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: rgba(255, 255, 255, .5);
-        cursor: pointer;
-        border-radius: .25rem;
-        padding: 0 .5rem;
-        background-color: rgba(0, 0, 0, .1);
-      }
-      
-      .carousel-button:hover,
-      .carousel-button:focus {
+        width: 369px;
+        background: gray;
         color: white;
-        background-color: rgba(0, 0, 0, .2);
-      }
-      
-      .carousel-button:focus {
-        outline: 1px solid black;
-      }
-      
-      .carousel-button.prev {
-        left: 1rem;
-      }
-      
-      .carousel-button.next {
-        right: 1rem;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #F1F1F1;
+        flex-shrink: 0;
+    }
+
+.slide.active {
+        background: tomato;
+    }
+.controls {
+    position:relative       ;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size:48;
+    top: -123px;
+    display: flex;
+    justify-content: space-between;
+    }
+.prev{
+    height: 48px;
+    border-radius: 0px 12px 12px 0px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+}
+.next{
+    height: 48px;
+    border-radius: 12px 0px 0px 12px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+
+}
+.products-section {
+    display:grid;
+    grid-template-columns: 315px 315px 315px 315px;
+    grid-template-rows: 134px 396px;
+    height: 530px;
+    max-width: 1260px;
+
+}
+.products-header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 27px;
+    padding-left: 64px;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+.more-products-button{
+    grid-column-start: 4;
+    padding-right: 64px;  
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+.more-button{background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6A983C;
+
+}
+.product-line {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+}

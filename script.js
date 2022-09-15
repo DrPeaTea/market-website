@@ -1,18 +1,30 @@
-const buttons = document.querySelectorAll("[data-carousel-button]");
+const slides = document.querySelectorAll(".slide");
+const container = document.querySelector(".container");
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
 
-    const activeSlide = slides.querySelector("[data-active]");
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-    if (newIndex < 0) newIndex = slides.children.length - 1;
-    if (newIndex >= slides.children.length) newIndex = 0;
+prev.addEventListener("click", () => {
+  const activeSlide = document.querySelector(".slide.active");
 
-    slides.children[newIndex].dataset.active = true;
-    delete activeSlide.dataset.active;
-  });
+  // Remove active class from current slide
+  activeSlide.classList.remove("active");
+
+  const prevSlide =
+    activeSlide.previousElementSibling || slides[slides.length - 1];
+
+  prevSlide.classList.add("active");
+  prevSlide.scrollIntoView({ behavior: "smooth", block: "nearest" });
+});
+
+next.addEventListener("click", () => {
+  const activeSlide = document.querySelector(".slide.active");
+
+  // Remove active class from current slide
+  activeSlide.classList.remove("active");
+
+  let nextSlide = activeSlide.nextElementSibling || slides[0];
+
+  nextSlide.classList.add("active");
+  nextSlide.scrollIntoView({ behavior: "smooth", block: "nearest" });
 });
