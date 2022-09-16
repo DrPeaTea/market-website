@@ -1,23 +1,42 @@
-.header {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    padding: 0px 80px;
-    max-width: 1260px;
-    height: 130px;
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;}
+.header{
+    display: grid;
+    grid-template-columns: 1210px 50px;
+    grid-template-rows: 130px 55px;
+    padding-left: 45px;
 }
-.links-bar {
-    background-color: #F9F9F9;
-    max-width: 1260px;
-    height: 45px;
-    font-size: 15px;
+.web-name{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    font-size: 25px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-family: cursive;
+}
+.cart-icon{
+    grid-column-start: 2;
+    grid-row-end: 2;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.nav-bar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 16px 45px;
-    gap: 39px;
+    gap: 40px;
+    font-size: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #F9F9F9;
 }
+
 .category {
     position: relative;
     display: flex;
@@ -224,6 +243,7 @@ img {
     display:grid;
     grid-template-columns:630px 630px;
     grid-template-rows: 134px 291px;
+    padding-left: 45px;
 }
 .title {
     display: flex;
@@ -275,10 +295,9 @@ img {
     }
 .controls {
     position:relative;
-    z-index: 2;
     background: none;
     border: none;
-    font-size:48;
+    font-size:48px;
     top: calc(-50% + 24px);
     display: flex;
     justify-content: space-between;
@@ -343,3 +362,45 @@ img {
     padding-left: 64px;
     padding-right: 64px;
 }
+.info{
+    display: grid;
+    grid-template-columns: 315px 315px 315px 315px;
+    grid-template-rows: 200px 30px 50px;
+    padding-left: 45px;
+}
+ul{
+    list-style: none;
+    padding: 0%;
+    font-size: 18px;
+    
+}
+.info h1{
+    font-size:18px;
+}
+a:link{
+    color:#6A983C ;
+    text-decoration: none;
+    font-size: 14px;
+}
+.product-tags{
+    grid-column-start: 1;
+    font-size: 18px;
+    font-weight: 600px;
+    font-family: cursive;
+}
+.button-tags {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+button{
+      background-color: #f5f5f5;
+      border-style: none;
+      height: 25px;
+      border-radius: 100px;
+      margin-block: 10px;
+      margin-right: 10px;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 14px;
+    }
