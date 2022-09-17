@@ -32,6 +32,7 @@ body{
     flex-direction: row;
     gap: 40px;
     font-size: 15px;
+    padding-left: 16px;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: #F9F9F9;
@@ -174,7 +175,7 @@ a:active{
 background-color: lightslategray;
 }
 .product {
-    border: 1px solid black;
+    border: 1px solid #D1D1D1;
     height: 323px;
     max-width: 270px;
     border-radius: 12px;
@@ -265,7 +266,7 @@ img {
 .container {
         display: flex;
         gap: 32px;
-        max-width:1260px;
+        max-width:1250px;
         overflow: hidden;
     }
 .slide {
@@ -349,7 +350,6 @@ img {
     font-size: 15px;
     font-weight: 700;
     color: #6A983C;
-
 }
 .product-line {
     max-width: 1260px;
