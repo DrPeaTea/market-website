@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .card {
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .product-info {
+            padding: 16px;
+        }
+        
+        h2 {
+            margin: 0;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .price-container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://via.placeholder.com/400">
+            </div>
+
+            <div class="product-info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas ipsa et quia ut quam nostrum incidunt, exercitationem eos ad deserunt sit numquam adipisci error asperiores ipsam, voluptate voluptatem enim.</p>
+                
+                <div class="details">
+                    <div class="price-container">
+                        <span>$300</span>
+                        <span>$500</span>
+                    </div>
+                    
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
