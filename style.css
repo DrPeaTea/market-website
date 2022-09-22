@@ -52,7 +52,7 @@ body{
     .category {
         display: flex;
         flex-direction: column;
-        align-items: center;s
+        align-items: center;
         justify-content: center;
         padding: 64px 45px;
         gap: 32px;
@@ -348,15 +348,16 @@ img {
     font-weight: 900;
 
 }
-@media only screen (min-width:768px){
+@media only screen and (min-width:768px){
 .products-section {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     max-height: 530px;
     max-width: 1260px;
-}}
-@media only screen (max-width:768px){
+}
+}
+@media only screen and (max-width:768px){
     .products-section {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

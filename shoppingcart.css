@@ -4,6 +4,8 @@
     width: 400px;
     height:auto;
     border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px 16px;
 }
 .title{
     display: flex;
@@ -30,7 +32,7 @@ padding-top: 24px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1.5fr 1fr;
-    border: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
     padding-top: 32px;
 }
 .box__picture{
@@ -113,7 +115,7 @@ color:#A9A9A9;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    width: 120px;
+    max-width: 120px;
     height:32px ;
     background-color: #D1D1D1;
     border: 1px solid #D1D1D1;
@@ -122,7 +124,6 @@ color:#A9A9A9;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 10px
 }
 .box__price__qty input[type=number]{
     width: 37px;
@@ -193,5 +194,5 @@ padding:12px
     border-radius: 12px;
     font-size: 15px;
     font-weight: 700;
-    padding: 12 16;
+    height: 48px;
 }
