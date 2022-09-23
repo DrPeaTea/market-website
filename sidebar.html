@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="Categories">
+        <div class="Categories__header">Categories</div>
+        <div class="Categories__links">
+          <div><a href="categories__links_a">category name320 </a></div>
+          <div><a href="categories__links_a">category name321 </a></div>
+          <div><a href="categories__links_a">category name322 </a></div>
+          <div><a href="categories__links_a">category name323 </a></div>
+        </div>
+      </div>
+      <div class="Brands">
+        <div class="Brands__header">Brand</div>
+        <div><input type="checkbox" />filter by brand item</div>
+        <div><input type="checkbox" />filter by brand item</div>
+        <div><input type="checkbox" />filter by brand item</div>
+        <div><input type="checkbox" />filter by brand item</div>
+        <div><input type="checkbox" />filter by brand item</div>
+      </div>
+      <div class="Rating">
+        <div class="Rating__header">Rating</div>
+        <div>
+          <input type="checkbox" /> &#11088;&#11088;&#11088;&#11088;&#11088;
+        </div>
+        <div>
+          <input type="checkbox" />&#11088;&#11088;&#11088;&#11088;&#9734;
+        </div>
+        <div>
+          <input type="checkbox" />&#11088;&#11088;&#11088;&#9734;&#9734;
+        </div>
+        <div>
+          <input type="checkbox" />&#11088;&#11088;&#9734;&#9734;&#9734;
+        </div>
+        <div><input type="checkbox" />&#11088;&#9734;&#9734;&#9734;&#9734;</div>
+      </div>
+      <div class="Price">
+        <div class="Price__header">Price</div>
+        <div class="slider">
+          <div class="progress"></div>
+          <div class="range-input">
+            <input
+              type="range"
+              class="range-min"
+              min="0"
+              max="99999"
+              value="00000"
+            />
+            <input
+              type="range"
+              class="range-min"
+              min="0"
+              max="99999"
+              value="99999"
+            />
+          </div>
+          <div class="price-input">
+            <div class="field">
+              <span>Min</span>
+              <input type="number" class="input-min" value="00000" />
+            </div>
+            <div class="separator">-</div>
+            <div class="field">
+              <span>Max</span>
+              <input type="number" class="input-max" value="99999" />
+            </div>
+          </div>
+          <button>Apply</button>
+          <button>Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="Toggle"><button>X</button></div>
+    <script>
+      const SideBarButton = document.querySelector(".Toggle");
+      const SideBar = document.querySelector(".sidebar");
+      SideBarButton.addEventListener("click", () => {
+        SideBarButton.classList.toggle("is-active");
+        SideBar.classList.toggle("is-active");
+      });
+    </script>
+  </body>
+</html>
