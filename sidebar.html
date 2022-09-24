@@ -10,6 +10,7 @@
   <body>
     <div class="sidebar">
       <div class="Categories">
+        <button class="close-button">X</button>
         <div class="Categories__header">Categories</div>
         <div class="Categories__links">
           <div><a href="categories__links_a">category name320 </a></div>
@@ -82,9 +83,17 @@
     <script>
       const SideBarButton = document.querySelector(".Toggle");
       const SideBar = document.querySelector(".sidebar");
+
+      const closeButton = document.querySelector(".close-button");
+
       SideBarButton.addEventListener("click", () => {
-        SideBarButton.classList.toggle("is-active");
+        SideBarButton.classList.add("is-active");
         SideBar.classList.toggle("is-active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        // SideBarButton.classList.remove("is-active");
+        SideBar.classList.remove("is-active");
       });
     </script>
   </body>

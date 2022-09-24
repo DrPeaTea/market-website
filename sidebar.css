@@ -1,163 +1,180 @@
-@media only screen and (min-width:768px){
-.sidebar{
-    width: 300px; 
+.close-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: -60px;
+}
+
+.sidebar {
+    background: white;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 300px;
     height: 1304px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border: 1px solid black;
     padding-left: 45px;
-}
-.Toggle{
-display: none;
-}
-}
-@media only screen and (max-width:768px){
-    .sidebar{
-        width: 300px; 
-        height: 1304px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        border: 1px solid black;
-        padding-left: 45px;
-        left: -100%;
-        position: fixed;
-    }
-    .sidebar.is-active{
-        left: 0;
-    }
-    .Toggle{
-        display:block;
-        position: relative;
-        padding-top: 10px;
-    }
-    .Toggle button {
-        background-color:#6A983C;
-        border: 2px solid #46760A;
-        border-radius: 2px;
-        color: white;
-    }
-}
+  }
 
-.Categories__header{
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 12px;
+  .Toggle {
+    display: none;
+  }
+
+  .close-button {
+    display: none;
+  }
 }
-.Categories__links {
-display: flex;
-flex-direction: column;
-font-size: 14;
-font-weight: 400;
-gap:12px;
-}
-.Categories__links a{
-    text-decoration: none;
-    color: black;
-}
-.Brands{
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 300px;
+    height: 1304px;
     display: flex;
     flex-direction: column;
-    font-size: 14;
-    font-weight: 400;
-    gap:12px;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding-left: 45px;
+    left: -100%;
+    position: fixed;
+  }
+  .sidebar.is-active {
+    left: 0;
+  }
+  .Toggle {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+  }
+  .Toggle button {
+    background-color: #6a983c;
+    border: 2px solid #46760a;
+    border-radius: 2px;
+    color: white;
+  }
 }
-.Brands__header{
-    font-size: 18px;
-    font-weight: 600;
+
+.Categories__header {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 12px;
 }
-.Rating{
-    display: flex;
-flex-direction: column;
-font-size: 14;
-font-weight: 400;
-gap:12px;
+.Categories__links {
+  display: flex;
+  flex-direction: column;
+  font-size: 14;
+  font-weight: 400;
+  gap: 12px;
 }
-.Rating__header{
-    font-weight: 600;
-    font-size: 18px;
+.Categories__links a {
+  text-decoration: none;
+  color: black;
 }
-.price-input{
-    width: 100%;
-    display: flex;
-    margin-top: 30px;
+.Brands {
+  display: flex;
+  flex-direction: column;
+  font-size: 14;
+  font-weight: 400;
+  gap: 12px;
 }
-.price-input .field{
-    height: 45px;
-    width: 100%;
-    align-items: center;
+.Brands__header {
+  font-size: 18px;
+  font-weight: 600;
 }
-.field input{
-    width: 100%;
-    height: 100%;
-    border: 1px solid#D1D1D1;
-    outline: none;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 14px;
-    -moz-appearance: none;
+.Rating {
+  display: flex;
+  flex-direction: column;
+  font-size: 14;
+  font-weight: 400;
+  gap: 12px;
+}
+.Rating__header {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price-input {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+.price-input .field {
+  height: 45px;
+  width: 100%;
+  align-items: center;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid#D1D1D1;
+  outline: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  -moz-appearance: none;
 }
 input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button{
-    -webkit-appearance: none;
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
-.price-input .separator{
-    height: 100px;
-    width: 100px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.price-input .separator {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
 }
-.slider{
-    width: 251px;
-    border-radius: 12px;
-    background-color:white
-
+.slider {
+  width: 251px;
+  border-radius: 12px;
+  background-color: white;
 }
-.slider .progress{
-    height: 5px;
-    background-color:#19b94f;
-    border-radius: 12px;
-    left: 50px;
-    right: 50px;
+.slider .progress {
+  height: 5px;
+  background-color: #19b94f;
+  border-radius: 12px;
+  left: 50px;
+  right: 50px;
 }
-.range-input{
-    position: relative;
+.range-input {
+  position: relative;
 }
-.range-input input{
-    top: -5px;
-    height: 5px;
-    width: 100%;
-    pointer-events: none;
-    -webkit-appearance: none;
-    background: none;
-    position: absolute;
+.range-input input {
+  top: -5px;
+  height: 5px;
+  width: 100%;
+  pointer-events: none;
+  -webkit-appearance: none;
+  background: none;
+  position: absolute;
 }
-input[type="range"]::-webkit-slider-thumb{
-    width: 20px;
-    height: 20px;
-    -webkit-appearance: none;
-    border-radius: 50%;
-    border: 1px solid #D1D1D1;
-    background-color: #FFFFFF;
-    pointer-events: auto;
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  pointer-events: auto;
 }
-input[type="range"]::-moz-range-thumb{
-    height: 20px;
-    width: 20px;
-    -moz-appearance: none;
-    border-radius: 50%;
-    background-color: #ff0000 ;
-    pointer-events: auto;
-    border: none;
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  -moz-appearance: none;
+  border-radius: 50%;
+  background-color: #ff0000;
+  pointer-events: auto;
+  border: none;
 }
-.slider button{
-    background-color:#6A983C;
-    border: 2px solid #46760A;
-    border-radius: 12px;
-    width: 78px;
-    height: 48px;
-    color: white;
+.slider button {
+  background-color: #6a983c;
+  border: 2px solid #46760a;
+  border-radius: 12px;
+  width: 78px;
+  height: 48px;
+  color: white;
 }
