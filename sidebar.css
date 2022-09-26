@@ -1,19 +1,19 @@
 .close-button {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    right: -61px;
-    border-radius: 2px;
-    background-color:#6a983c;
-    border: 2px solid #46760a ;
-    color: white;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: -61px;
+  border-radius: 2px;
+  background-color: #6a983c;
+  border: 2px solid #46760a;
+  color: white;
 }
 
 .sidebar {
-    background: white;
-    z-index: 1;
-    border-radius: 2px;
+  background: white;
+  z-index: 1;
+  border-radius: 2px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,8 +64,7 @@
     height: 60px;
     top: 0;
     right: -61px;
-    border: 2px solid #46760a ;
-    
+    border: 2px solid #46760a;
   }
 }
 
@@ -88,8 +87,8 @@
   text-decoration: none;
   color: black;
 }
-.Categories__links__b{
-right: 0;
+.Categories__links__b {
+  right: 0;
 }
 
 .Brands {
@@ -102,7 +101,6 @@ right: 0;
 .Brands__header {
   font-size: 18px;
   font-weight: 600;
-  
 }
 /* The container */
 .checkbox__container {
@@ -135,7 +133,7 @@ right: 0;
   height: 25px;
   width: 25px;
   background-color: white;
-  border: 1.5px solid #D1D1D1;
+  border: 1.5px solid #d1d1d1;
   border-radius: 5px;
 }
 
@@ -146,8 +144,8 @@ right: 0;
 
 /* When the checkbox is checked, add a green background */
 .checkbox__container input:checked ~ .checkmark {
-  background-color: #6A983C;
-  border: 1.5px solid #46760A;
+  background-color: #6a983c;
+  border: 1.5px solid #46760a;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -174,8 +172,6 @@ right: 0;
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-
 
 .Rating {
   display: flex;
@@ -262,7 +258,7 @@ input[type="range"]::-moz-range-thumb {
   pointer-events: auto;
   border: none;
 }
-.apply__button{
+.apply__button {
   background-color: #6a983c;
   border: 2px solid #46760a;
   border-radius: 12px;
@@ -271,16 +267,15 @@ input[type="range"]::-moz-range-thumb {
   color: white;
   font-size: 15px;
   font-weight: 700;
- 
 }
-.reset__button{
-    background-color: #ffffff;
-    border: none;
-    color: #A9A9A9;
-    position: absolute;
-    width: 78px;
-    height: 48px;
-    font-size: 15px;
-    font-weight: 700;
-    margin-left: 30px;
-  }
+.reset__button {
+  background-color: #ffffff;
+  border: none;
+  color: #a9a9a9;
+  position: absolute;
+  width: 78px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 30px;
+}
