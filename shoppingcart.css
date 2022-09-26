@@ -1,6 +1,14 @@
 .shoppingcart{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    
+}
+.shoppingcart.active{
     display: flex;
     flex-direction: column;
+    background-color: white;
     width: 400px;
     height:auto;
     border: 1px solid black;
